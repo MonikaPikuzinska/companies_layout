@@ -1,0 +1,32 @@
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 64px;
+    .btn {
+        width: 105px;
+        height: 38px;
+        background: #FFFFFF;
+        border: 2px solid #EC1115;
+        color: #EC1115;
+        box-sizing: border-box;
+        border-radius: 30px;
+        margin: 16px 16px 0px;
+        font-family: 'Roboto Mono';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        &:hover {
+            cursor: pointer;
+        }
+        &-active {
+           background: #EC1115; 
+           color: #FFFFFF;
+        }
+        @media ( min-width: 767px ) {
+            margin: 0 19px;
+            font-size: 18px;
+        }
+    }
+}

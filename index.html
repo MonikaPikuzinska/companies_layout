@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Companies</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@600&family=Roboto&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="header">Check out the most popular companies</h1>
+        <nav class="menu">
+            <button class="btn btn-active" onclick="filterCompanies(this, 'all')">All</button>
+            <button class="btn" onclick="filterCompanies(this, 'women')">Women</button>
+            <button class="btn" onclick="filterCompanies(this, 'men')">Men</button>
+            <button class="btn" onclick="filterCompanies(this, 'kids')">Kids</button>
+        </nav>
+        <div class="cards">
+            <div class="card men women kids">
+                <div class="logo">
+                    <img src="img/Vinted.svg" alt="vinted logo">
+                </div>
+                <p class="description">Build the perfect application to keep your business moving forward. And some blah blah, we need four lines.</p>
+                <p class="hashtag">#men #women #kids</p>
+            </div>
+            <div class="card men">
+                <div class="logo">
+                    <img src="img/logo-reserved.30BCcIA 1.svg" alt="reserved logo">
+                </div>
+                <p class="description">Build the perfect application to keep your business moving forward. And some blah blah, we need four lines.</p>
+                <p class="hashtag">#men</p>
+            </div>
+            <div class="card women kids">
+                <div class="logo">
+                    <img src="img/zalando.svg" alt="zalando logo">
+                </div>
+                <p class="description">Build the perfect application to keep your business moving forward. And some blah blah, we need four lines.</p>
+                <p class="hashtag">#women #kids</p>
+            </div>
+        </div>
+        <footer class="footer">Copyright © 2020 Monterail sp. z o.o.   |    <u>Privacy policy</u></footer>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
